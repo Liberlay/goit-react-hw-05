@@ -1,0 +1,29 @@
+.container {
+  .top {
+    display: flex;
+    gap: 32px;
+    margin: 12px 0;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      .genres {
+        display: flex;
+        gap: 12px;
+      }
+    }
+  }
+
+  .additional {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+
+    .additionalList {
+      display: flex;
+      gap: 12px;
+    }
+  }
+}
