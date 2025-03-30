@@ -8,7 +8,6 @@ import MovieList from '../../components/MovieList/MovieList'
 import SearchForm from '../../components/SearchForm/SearchForm'
 
 export default function MoviesPage() {
-  const [query, setQuery] = useState('')
   const [movies, setMovies] = useState([])
   const [loading, setLoading] = useState(false)
   const [searchParams, setSearchParams] = useSearchParams()
@@ -28,12 +27,11 @@ export default function MoviesPage() {
       }
     }
     getSearchedData()
-  }, [searchParam, query])
+  }, [searchParam])
 
   const handleSearch = (newSearch) => {
     searchParams.set('query', newSearch)
     setSearchParams(searchParams)
-    setQuery(newSearch)
   }
 
   return (
